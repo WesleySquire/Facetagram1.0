@@ -1,0 +1,35 @@
+1.Have a Figma design done up for your project following the design principles 
+that Levin taught you in UI/UX. (Generally speaking –a reasonable user 
+experience, with some thought given to the aesthetics of the page)
+2.Implement the project in React3.Use proper Semantic HTML tags where 
+applicable4.Comment your code for clear representation of its purpose
+5.CSS and React code that approximates the design in the Figma mockup.
+6.Must use React Router (Aminimum of 3 pages.)
+7.Upload the finished project to GitHub
+
+The design can follow inspiration from any social media app of your choosing 
+as many of them follow the same philosophies(you may find inspirationlooking 
+at Facebook, Twitter,Instagram, reddit, etc).The canonical version of this app 
+has at least three screens, described in the paragraphs below.Firstly, it is 
+going to have a sign-in splash screen that opens when the app first opens.
+All this screen will do is prompt the user for a name and passwordtologinand 
+upon doing so be taken to their feed. You should include dummy data for an 
+account you can use to login (this can easily be hard coded inand is mostly
+for testing/validation purposesof the login feature).There should also be a 
+sign-up page which the user can enter their name and password, and then be 
+taken to theirfeed-the feed page should reflect at least one piece of user
+data for the created account (for example their name/username that they 
+entered in the signup) -you can accomplish this locallywith either useState 
+or localStorage –no need to create a real backend.For simplicity’s sake the 
+actual feeds themselves between logging in/signing up aren’t requiredto be
+different(Though large brownie points to you if you can pull it off!).
+The feed will display all the relevant content to the user. Again, think
+Facebook, Twitter, or Instagram in which you can easily scroll through
+content. This content should contain mock data for users, profile pictures,
+likes,textcontentand “uploaded” images. Lastly the user should be able 
+tolike other posts ormake a post themselves which will then be added to 
+the feed.Again, this is just one project idea, if it doesn't appeal to 
+you, Nicholas and Roy are happy to help your team brainstorm ideas. 
+As before, a Figma design is required with submission. If you come 
+to Roy and Nicholasearly with your Figma designs, we can give you 
+advice and make sure you're on the right track.

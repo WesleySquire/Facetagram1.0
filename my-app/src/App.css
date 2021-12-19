@@ -1,0 +1,306 @@
+/* CSS done by Wesley Squire */
+#root {
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#home {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+}
+
+ul li {
+  list-style: none;
+}
+
+header img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+}
+
+hr {
+  margin: 0px;
+  color: #dadada;
+  height: 0.5px;
+  width: 100%;
+}
+.ProfilePic {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    to right,
+    #8a3ab9,
+    #e95950,
+    #bc2a8d,
+    #eedd44,
+    #fccc63,
+    #fbad50,
+    #cd486b,
+    #4c68d7
+  );
+  border-radius: 100%;
+  position: relative;
+  text-align: center;
+  padding: 3px;
+  box-sizing: border-box;
+  animation: spinner 3s linear infinite;
+}
+.ProfilePic::before {
+  border-radius: 100%;
+  content: "";
+  background-image: linear-gradient(
+    to left,
+    #8a3ab9,
+    #e95950,
+    #bc2a8d,
+    #eedd44,
+    #fccc63,
+    #fbad50,
+    #cd486b,
+    #4c68d7
+  );
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  position: absolute;
+  z-index: -1;
+  animation: spinner 3s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Profile {
+  overflow-x: hidden;
+}
+
+#ProfileTop {
+  display: flex;
+  flex-direction: row;
+  max-height: 155px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  /* margin-bottom: 10px; */
+}
+
+#ProfileTopRight {
+  max-width: 80%;
+  height: 100%;
+  /* background-color: #c4c4c4; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#ProfilePosts {
+  height: 100vh;
+  /* display: flex; */
+}
+
+#posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.post {
+  width: 80%;
+  padding: 5%;
+  margin-top: 5%;
+  background-color: #c4c4c4;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#ProfileTopLeft {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+#username2 {
+  margin-top: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  margin-bottom: 5%;
+}
+
+#ProfileTopLeft .ProfilePic {
+  width: 80px;
+  height: 80px;
+}
+
+#ProfileTopRight textarea {
+  background-color: #c4c4c4;
+  color: #000;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 16px;
+}
+
+#postTitle {
+  margin-bottom: 0px;
+  margin-top: 5%;
+  font-size: 2em;
+}
+
+.post p {
+  margin: 0;
+  height: 20px;
+  width: 80%;
+}
+
+#root {
+  height: 100vh;
+}
+
+.LogIn {
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.LogIn form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 55px 40px 85px 40px;
+  border-radius: 20px;
+  background-color: #c4c4c4;
+}
+
+#Login2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.LogIn form button {
+  width: 100%;
+}
+
+.post link {
+  text-decoration: none;
+}
+
+.LogIn form input,
+.LogIn form button,
+.LogIn form a {
+  margin-top: 5px;
+  max-width: 190px;
+}
+
+form h1 {
+  margin: 0;
+}
+
+.form-content-right {
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.form-content-right2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.form-content-right2 form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 55px 40px 85px 40px;
+  border-radius: 20px;
+  background-color: #c4c4c4;
+}
+
+.form-inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-content-right2 #logo {
+  /* width: 20%; */
+}
+
+.errorMsg {
+  min-height: 15.2px;
+}
+
+.errorMsg p {
+  margin: 0;
+  color: red;
+  font-size: 12px;
+}
+
+.form-content-right2 button {
+  width: 100%;
+}
+
+.form-content-right2 span {
+  margin-top: 15.2px;
+}
+
+.postLeft .ProfilePic {
+  width: 70px;
+  height: 70px;
+}
